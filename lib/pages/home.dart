@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/add_recipe_pages/addrecipe.dart';
-import 'package:flutter_application_1/pages/bookmark_pages/bookmark.dart';
-import 'package:flutter_application_1/pages/camera_pages/camera.dart';
+import 'package:flutter_application_1/pages/addrecipe.dart';
+import 'package:flutter_application_1/pages/bookmark.dart';
+import 'package:flutter_application_1/pages/camera.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
-import 'package:flutter_application_1/pages/profile_pages.dart/profile.dart';
+import 'package:flutter_application_1/pages/profile.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

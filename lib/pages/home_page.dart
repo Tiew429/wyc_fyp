@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/model/recipedetail.dart';
+import 'package:flutter_application_1/model/recipe.dart';
+import 'package:flutter_application_1/pages/recipedetails.dart';
+import 'package:go_router/go_router.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -57,19 +59,19 @@ class HomePage extends StatelessWidget {
   }) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => RecipeDetailPage(
+        context.go('/recipedetails', 
+          extra: {
+            'recipe': Recipe(
               image: image,
               title: title,
               time: time,
               tag: tag,
               author: author,
-              ingredients: "1 cup flour\n2 eggs\n1/2 cup sugar", // Example ingredients
-              directions: "1. Mix ingredients.\n2. Bake for 25 minutes.", // Example directions
+              ingredients: "1 cup flour\n2 eggs\n1/2 cup sugar",
+              steps: "1. Mix ingredients.\n2. Bake for 25 minutes.",
             ),
-          ),
+            'userID': "jiajun0323",
+          },
         );
       },
       child: Container(
