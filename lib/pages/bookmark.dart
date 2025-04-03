@@ -8,6 +8,7 @@ class BookmarkPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Bookmarks'),
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       body: const Center(
         child: Text(
