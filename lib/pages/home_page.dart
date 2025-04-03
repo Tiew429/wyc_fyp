@@ -7,43 +7,49 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Text(
-              "Our Latest Recipes",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home'),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                "Our Latest Recipes",
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
             ),
-          ),
-          SizedBox(
-            height: 300,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              children: [
-               _buildRecipeCard(
-                  context,
-                  image: 'assets/images/Takoyaki.jpg',
-                  time: '25 min.',
-                  tag: 'Vegetarian',
-                  title: 'Easy and fluffy apple cake',
-                  author: 'Marco Hartz',
-                ),
-                _buildRecipeCard(
-                  context,
-                  image: 'assets/images/Takoyaki.jpg',
-                  time: '10 min.',
-                  tag: '',
-                  title: 'Air fryer camembert',
-                  author: 'Marco Hartz',
-                ),
-              ],
+            SizedBox(
+              height: 300,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                children: [
+                 _buildRecipeCard(
+                    context,
+                    image: 'assets/images/Takoyaki.jpg',
+                    time: '25 min.',
+                    tag: 'Vegetarian',
+                    title: 'Easy and fluffy apple cake',
+                    author: 'Marco Hartz',
+                  ),
+                  _buildRecipeCard(
+                    context,
+                    image: 'assets/images/Takoyaki.jpg',
+                    time: '10 min.',
+                    tag: '',
+                    title: 'Air fryer camembert',
+                    author: 'Marco Hartz',
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

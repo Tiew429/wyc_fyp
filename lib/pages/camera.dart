@@ -158,6 +158,7 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
       return Scaffold(
         appBar: AppBar(
           title: const Text('Camera'),
+          backgroundColor: Theme.of(context).colorScheme.primary,
         ),
         body: Center(
           child: Column(
@@ -190,6 +191,7 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
       return Scaffold(
         appBar: AppBar(
           title: const Text('Camera'),
+          backgroundColor: Theme.of(context).colorScheme.primary,
         ),
         body: const Center(
           child: CircularProgressIndicator(),
@@ -200,6 +202,7 @@ class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Take Photo'),
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       body: Stack(
         children: [

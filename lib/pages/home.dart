@@ -38,10 +38,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Recipe App'),
-        backgroundColor: Theme.of(context).colorScheme.primary,
-      ),
       body: IndexedStack(
         index: _selectedIndex,
         children: _pages,
