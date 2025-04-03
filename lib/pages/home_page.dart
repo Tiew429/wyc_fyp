@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/model/recipe.dart';
-import 'package:flutter_application_1/pages/recipedetails.dart';
 import 'package:go_router/go_router.dart';
 
 class HomePage extends StatelessWidget {

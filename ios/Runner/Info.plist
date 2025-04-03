@@ -41,6 +41,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs camera access to take photos for your recipes</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs microphone access for recording with video</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs photos access to save captured images</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
