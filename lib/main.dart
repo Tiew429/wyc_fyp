@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'bookmark.dart'; // Assume you have bookmark.dart already created
-import 'camera.dart'; // Assume you have camera.dart already created
-import 'addrecipe.dart'; // Assume you have addrecipe.dart for AddPage
-import 'profile.dart'; // Assume you have profile.dart for ProfilePage
-import 'recipedetail.dart';
+import 'pages/bookmark.dart'; // Assume you have bookmark.dart already created
+import 'pages/camera.dart'; // Assume you have camera.dart already created
+import 'pages/addrecipe.dart'; // Assume you have addrecipe.dart for AddPage
+import 'pages/profile.dart'; // Assume you have profile.dart for ProfilePage
+import 'model/recipedetail.dart';
 
 void main() {
   runApp(const MyApp());
