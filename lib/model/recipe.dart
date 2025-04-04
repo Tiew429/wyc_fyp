@@ -3,6 +3,7 @@ class Recipe {
   final String title;
   final String time;
   final String tag;
+  String description;
   final String author;
   final String ingredients;
   final String steps;
@@ -14,6 +15,7 @@ class Recipe {
     required this.title,
     required this.time,
     required this.tag,
+    this.description = '',
     required this.author,
     required this.ingredients,
     required this.steps,
@@ -27,5 +29,9 @@ class Recipe {
 
   void removeLike(String userID) {
     likes.remove(userID);
+  }
+
+  void setDescription(String description) {
+    this.description = description;
   }
 }
